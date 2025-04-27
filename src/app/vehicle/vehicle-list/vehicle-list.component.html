@@ -1,18 +1,18 @@
 <div class="container-fluid">
   <div class="col-6">
     <table class="table">
-      <thead class="table-header">
+      <thead>
         <tr>
-          <th class="h3">#</th>
-          <th class="h3">Marca</th>
-          <th class="h3">Línea</th>
-          <th class="h3">Modelo</th>
+          <th>#</th>
+          <th>Marca</th>
+          <th>Línea</th>
+          <th>Modelo</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let v of vehicles">
           <td>
-            <dd id="idColumn">{{v.id}}</dd>
+            <dd class="bold">{{v.id}}</dd>
           </td>
           <td>
             <dd>{{v.marca}}</dd>
