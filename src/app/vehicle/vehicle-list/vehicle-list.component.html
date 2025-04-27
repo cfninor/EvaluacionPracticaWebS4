@@ -26,5 +26,8 @@
       </tr>
       </tbody>
     </table>
+    <div *ngFor="let e of vehiclesCount | keyvalue">
+      <p>Total {{e.key}}: {{e.value}}</p>
+    </div>
   </div>
 </div>
