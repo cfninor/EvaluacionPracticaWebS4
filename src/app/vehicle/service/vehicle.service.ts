@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Vehicle } from '../vehicle';
 
 @Injectable({
@@ -11,7 +12,7 @@ export class VehicleService {
 
   constructor(private http: HttpClient) { }
 
-  getVehicles() {
+  getVehicles(): Observable<Vehicle[]> {
     return this.http.get<Vehicle[]>(this.apiUrl);
   }
 
