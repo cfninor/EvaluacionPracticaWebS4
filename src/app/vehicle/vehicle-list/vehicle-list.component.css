@@ -1,0 +1,13 @@
+table th{
+    background-color: #323A41;
+    color: white;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+}
